@@ -1,0 +1,148 @@
+body {
+  background-color: #ffb09f;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.to-do-list-container {
+  width: 35%;
+  margin: 150px auto;
+  min-height: 250px;
+  border-radius: 20px;
+  background-color: #fff;
+  padding: 20px;
+  box-shadow: 2px 4px 2px 0px rgba(110, 110, 110, 0.75);
+}
+
+h3 {
+  text-align: center;
+  margin: 10px auto;
+}
+
+.to-do-list-form {
+  display: flex;
+  justify-content: space-between;
+}
+
+.to-do {
+  width: 75%;
+  border: 1px solid #000;
+}
+
+.to-do:focus {
+  outline: none;
+}
+
+.to-do,
+.to-do-btn {
+  padding: 5px;
+  border-radius: 5px;
+}
+
+.to-do-btn {
+  width: 20%;
+  cursor: pointer;
+  background-color: #ff2d00;
+  color: #fff;
+  border: none;
+}
+
+.to-do-list {
+  margin: 30px auto;
+  min-height: 100px;
+}
+
+.to-do-items {
+  width: 90%;
+  padding: 7px;
+  background-color: #ffddd6;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 10px auto;
+  border-radius: 10px;
+}
+
+.to-do-items,
+.to-do-btn {
+  transition: 0.4s;
+}
+
+.to-do-items:hover,
+.to-do-btn:hover {
+  box-shadow: 2px 4px 2px 0px rgba(189, 189, 189, 0.75);
+}
+
+.todo-text,
+.todo-icons {
+  width: 25%;
+}
+
+.todo-text p {
+  font-size: 0.9rem;
+}
+
+.todo-icons img {
+  width: 20px;
+  height: 20px;
+  margin-left: 5px;
+  cursor: pointer;
+  transform: translateY(2px);
+}
+
+.error-msg {
+  padding: 10px 0px;
+  font-size: 1rem;
+  visibility: hidden;
+}
+
+.active-error .error-msg {
+  color: #ff2d00;
+  visibility: visible;
+}
+
+@media (max-width: 850px) {
+  .to-do-list-container {
+    width: 60%;
+  }
+}
+
+@media (max-width: 500px) {
+  .to-do-list-container {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .to-do-list-container {
+    width: 90%;
+  }
+}
+
+@media (max-width: 350px) {
+  .to-do-btn {
+    width: fit-content;
+  }
+
+  .todo-icons {
+    width: 50%;
+  }
+
+  .todo-icons img {
+    float: right;
+  }
+}
+
+@media (max-width: 300px) {
+  .to-do {
+    width: 55%;
+  }
+
+  .to-do-btn {
+    width: 35%;
+  }
+}
